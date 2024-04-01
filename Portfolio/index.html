@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My Portfolio</title>
+    
+    <style>
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url(tb.jpg);
+}
+
+     *{
+        margin: 0;
+        padding: 0;
+        font-family: 'Times New Roman', Times, serif;
+        color: aliceblue;
+     }
+
+     .hero{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background-image: url(tbb.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+     }
+
+     nav{
+        display: flex;
+        width: 85%;
+        margin: auto;
+        padding: 20px 0;
+        align-items: center;
+        justify-content: space-between;
+     }
+
+     nav ul li{
+        display: inline-block;
+        list-style: none;
+        margin: 20px 20px;
+        font-size: large;
+        font-weight: bolder;
+     }
+
+     nav ul li a{
+        text-decoration: wavy;
+        color: rgb(216, 211, 211);
+        font-weight: bold;
+     }
+
+     nav ul li a:hover{
+        color: brown;
+     }
+
+     .diamond-list {
+  list-style: none;
+  padding-left: 20px;
+}
+
+.diamond-list li {
+  position: relative;
+  padding-left: 15px;
+}
+
+.diamond-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 10px;
+  background-color: rgb(17, 188, 120);
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+section p {
+    margin-bottom: 1rem;
+}
+
+     .port{
+        margin-left: 8%;
+        margin-top: 13%;
+     }
+
+     .port h1{
+        font-size: 50px;
+        color: rgb(19, 224, 156);
+        margin-bottom: 20px;
+     }
+
+     span{
+        color: blueviolet;
+     }
+
+     .port p{
+        color: rgb(224, 61, 245);
+        line-height: 22px;
+        font-size: larger;
+     }
+
+     .port a{
+        background: rgb(41, 40, 40);
+        padding: 10px 18px;
+        text-decoration: none;
+        font-weight: bold;
+        color: rgb(251, 254, 255);
+        display: inline-block;
+        margin: 30px 0;
+        border-radius: 5px;
+     }
+
+     .pics {
+            position: absolute;
+            top: 10%; 
+            right: 15%; 
+            z-index: 1; 
+     }
+
+        .pics img {
+            width: 360px; 
+            height: 390px; 
+            display: block;
+        }
+
+       h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #fff; 
+}
+
+p {
+    margin-bottom: 1rem;
+    color: #fff; 
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 0.5rem;
+    color: #fff;
+}
+
+a {
+    color: #1f5f90; 
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #14d4e5; 
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin-right: 1rem;
+}
+
+section {
+    border-radius: 50px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    font-size: 130%;
+    line-height: 1.5;
+    padding: 1.5rem;
+    background-image: url(bb.avif);
+}
+
+.outlined-text {
+    color: #060000; 
+    text-shadow: -1px -1px 0 #000,
+                  1px -1px 0 #000,
+                 -1px  1px 0 #000,
+                  1px  1px 0 #000;
+}
+
+footer {
+    background: linear-gradient(135deg, #070301, #8d8686);
+    color: #fff;
+    text-align: center;
+    padding: 0.05%;
+    height: 1%;
+    font-size: large;
+}
+footer a {
+    color: #709ff0; 
+ }
+
+ footer a:hover {
+    color: #4a0606;
+}
+
+</style>
+
+<body>
+    <div class="hero">
+        <nav>
+          <img src="" class="logo" >
+          <ul>
+            
+            <li><a href="#about">ABOUT ME</a></li>
+            <li><a href="#skills">SKILLS</a></li>
+            <li><a href="#projects">PROJECTS</a></li>
+            <li><a href="#resume">RESUME</a></li>
+            <li><a href="#contact">CONTACT ME</a></li>
+       
+          </ul>
+        </nav>
+        <div class="port">
+            <h1 style="font-size: 50px;" class="outlined-text">I'm Isabel <span>Kwarteng</span></h1>
+            <p style="font-size: 25px;" class="outlined-text">And this is my official portfolio website</p>
+            <a href="https://twitter.com/_b_ella_">MY X</a>
+        </div>
+
+        <div class="pics">
+            <img src="me2.png" class="me">
+        </div>
+    </div>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I'm a passionate, committed programmer-to-be that loves coming up with innovative solutions to challenges that exist in the real world. My interest in learning how technology affects our lives and enables us to achieve amazing things led me to pursue a career in programming. </p>
+    <p>With a strong background in HTML, CSS, C#, C++, and JavaScript among many others, I've developed my web development skills, creating simple user interfaces that provide smooth user experiences.</p>
+    <p>My deep interest and love of technology drive me as an enthusiastic computer science student and future programmer. My educational experience has given me a solid theoretical understanding of algorithms, data structures, and the fundamentals of software development, which has prepared me for my practical problem-solving and coding skills.</p>
+    <p>My professional mindset revolves around continuous learning, and I'm constantly excited to investigate fresh perspectives and technologies in order to keep ahead of market trends. My goal is to use my technical know-how and creative abilities to improve the software development industry and help create a more promising digital future.</p>
+   </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul class="diamond-list">
+            <li>I am an intermediate to advanced level expert in Java, Python, and C++.</li>
+            <li>In addition to my familiarity with backend development with Node.js and frontend frameworks like React, I have the necessary skills in HTML, CSS, and JavaScript to create flexible and responsive websites.</li>
+            <li>Proficient in the use of Git and Github</li>
+            <li>Comfort in working with Visual Studio Code</li>
+            <li>Strong knowledge of data structures and basic algorithms.</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects">
+            <h3>Computer Science Department Website</h3>
+            <p>Developed a frontend website for the Computer Science Department for the University of Ghana</p>
+        <img src="SS4.PNG" height="600px" width="700px">
+        </div>
+        <div class="projects">
+            <p>
+            </p>
+            <h3>Calculator</h3>
+            <p>Created a fully functional calculator as part of my tasks for CodeSoft</p>
+            <img src="SS.PNG" height="600px" width="700px">
+        </div>
+        <div class="projects">
+            <p>
+            </p>
+            <h3>My Portfolio Website</h3>
+            <p>Developed an interactive one-page personal portfolio website</p>
+            <img src="SS3.PNG" height="600px" width="700px">
+            </div>
+        
+            <div class="projects">
+                <p>
+                </p>
+                <h3>Landing Page</h3>
+                <p>Created a landing page for a Virtual Reality Workshop website</p>
+                <img src="SS2.PNG" height="600px" width="700px">
+            </div>
+    </section>
+
+    <section id="resume">
+        <h2>Resume</h2>
+        <a href="my resume - 2024-04-01 12_07_53.pdf" download>Download Resume</a>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: izzyrello.bae@gmail.com</p>
+        <p>Phone: +233 242 715 901</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Isabel Kwarteng. All Rights Reserved.</p>
+        <p>Connect with me: <a href="https://www.linkedin.com/in/isabel-kwarteng-1516a7267/" target="_blank">LinkedIn</a> | <a href="https://github.com/Isabel-lllll" target="_blank">GitHub</a></p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const navLinks = document.querySelectorAll('nav ul li a');
+            const sections = document.querySelectorAll('section');
+
+            navLinks.forEach(navLink => {
+                navLink.addEventListener('click', function() {
+                    const targetId = this.getAttribute('href').substring(1);
+                    const targetSection = document.getElementById(targetId);
+
+                    if (!targetSection) {
+                        console.error(`Section with ID "${targetId}" not found.`);
+                    }
+                });
+            });
+
+            sections.forEach(section => {
+                const sectionId = section.getAttribute('id');
+                const matchingNavLink = document.querySelector(`nav ul li a[href="#${sectionId}"]`);
+
+                if (!matchingNavLink) {
+                    console.error(`Navigation link for section "${sectionId}" not found.`);
+                }
+            });
+        });
+    </script>
+</body>
+</html>
